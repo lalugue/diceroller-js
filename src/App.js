@@ -20,7 +20,9 @@ constructor(props){
     }
 
 setDice = () => {
-  this.setState({title:'booyah!'})
+  let number = Math.random() * 6;
+  number = Math.ceil(number) 
+  this.setState({title:number})
 }
    
 
