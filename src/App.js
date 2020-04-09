@@ -21,8 +21,19 @@ constructor(props){
 
 setDice = () => {
   let number = Math.random() * 6;
-  number = Math.ceil(number) 
+  number = Math.ceil(number)
+  //checker in case the value is 0
+  //for now, just set value to 1
+  if(number === 0)
+  {
+    number = 1
+  } 
   this.setState({title:number})
+}
+
+setDiceImage = (num) =>
+{
+
 }
    
 
