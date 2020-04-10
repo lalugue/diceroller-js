@@ -10,6 +10,7 @@ import imgdice6 from './assets/dice_6.svg'
 
 let images = [imgdice0, imgdice1, imgdice2,imgdice3,imgdice4,imgdice5,imgdice6];
 
+//a text component for testing purposes
 class DiceImage extends Component { 
 
   constructor(props){

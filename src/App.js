@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import DummyText from './DummyText';
+import DiceText from './DiceText';
 import RollButton from './RollButton'
 import DiceImage from './DiceImage'
 
@@ -18,8 +18,6 @@ constructor(props){
         imgsrc: 0
       }
     }
-
-
 
 setDice = () => {
   let number = Math.random() * 6;
@@ -45,7 +43,7 @@ setDiceImage = (num) =>
     <div className="App">
       <header className="App-header">
         <DiceImage imgsrc={this.state.imgsrc}/>        
-        <DummyText title={this.state.title}/>
+        <DiceText title={this.state.title}/>
         <RollButton setDice={this.setDice.bind(this)}/>
       </header>
       
