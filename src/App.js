@@ -9,19 +9,21 @@ import DiceImage from './DiceImage'
 
 //const RollButton = () => <Button color='facebook' onClick={()=>this.props.setText()}>Roll Dice</Button>
 //let DiceImage = () => <img src={logo} className="App-logo" alt="logo" />
+ 
 
 class App extends Component {
 
 
- 
 constructor(props){
       super(props);      
       this.state={
         text:'foo',
         title:'Roll the dice!',
-        imgsrc: logo
+        imgsrc: 0
       }
     }
+
+
 
 setDice = () => {
   let number = Math.random() * 6;
@@ -39,6 +41,7 @@ setDice = () => {
 setDiceImage = (num) =>
 {
   console.log('in setDiceImage')
+  this.setState({imgsrc:num})
 }
    
 
@@ -47,7 +50,7 @@ setDiceImage = (num) =>
   return (
     <div className="App">
       <header className="App-header">
-        <DiceImage/>        
+        <DiceImage imgsrc={this.state.imgsrc}/>        
         <DummyText title={this.state.title}/>
         <RollButton setDice={this.setDice.bind(this)}/>
       </header>
