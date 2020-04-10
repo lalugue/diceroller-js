@@ -14,7 +14,7 @@ class RollButton extends Component {
   
     render() {
       return (
-        <Button color='facebook' onClick={this.props.setDice}>Roll Dice</Button>       
+        <Button color='green' onClick={this.props.setDice}>Roll Dice</Button>       
         
       );
     }
