@@ -9,21 +9,13 @@ import imgdice6 from './assets/dice_6.svg'
 
 let images = [logo, imgdice1, imgdice2,imgdice3,imgdice4,imgdice5,imgdice6];
 
-class DiceImage extends Component {
-
-  
+class DiceImage extends Component { 
 
   constructor(props){
-    super(props);
-    //this.state=
-    //{imgsrc=this.props.imgsrc}
-    console.log('tis is image src')
-    console.log(props)
+    super(props);  
     
-  }
-  
-  
-  
+  } 
+    
     render() {
       return (
        

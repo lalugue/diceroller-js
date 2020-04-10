@@ -6,10 +6,8 @@ import DummyText from './DummyText';
 import RollButton from './RollButton'
 import DiceImage from './DiceImage'
 
-
 //const RollButton = () => <Button color='facebook' onClick={()=>this.props.setText()}>Roll Dice</Button>
-//let DiceImage = () => <img src={logo} className="App-logo" alt="logo" />
- 
+//let DiceImage = () => <img src={logo} className="App-logo" alt="logo" /> 
 
 class App extends Component {
 
@@ -39,11 +37,9 @@ setDice = () => {
 }
 
 setDiceImage = (num) =>
-{
-  console.log('in setDiceImage')
+{  
   this.setState({imgsrc:num})
 }
-   
 
 
   render(){

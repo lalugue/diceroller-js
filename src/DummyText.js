@@ -3,11 +3,8 @@ import React, { Component } from 'react';
 
 class DummyText extends Component {
   constructor(props){
-    super(props);
-    this.state=
-    {text:"this is initial state"}
-    console.log("this is props:")
-    console.log(this.props)
+    super(props);  
+    
   }
   
     render() {
@@ -15,8 +12,7 @@ class DummyText extends Component {
         <p>
           {this.props.title}              
         </p>
-        
-        
+                
       );
     }
   }
