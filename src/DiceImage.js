@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg'
 import imgdice0 from './assets/dice_0.svg'
 import imgdice1 from './assets/dice_1.svg'
 import imgdice2 from './assets/dice_2.svg'

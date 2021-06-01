@@ -4,9 +4,6 @@ import DiceText from './DummyText';
 import RollButton from './RollButton'
 import DiceImage from './DiceImage'
 
-//const RollButton = () => <Button color='facebook' onClick={()=>this.props.setText()}>Roll Dice</Button>
-//let DiceImage = () => <img src={logo} className="App-logo" alt="logo" /> 
-
 class App extends Component {
 
 
@@ -23,7 +20,7 @@ setDice = () => {
   let number = Math.random() * 6;
   number = Math.ceil(number)
   //checker in case the value is 0
-  //for now, just set value to 1
+  //in this case, set value to 1
   if(number === 0)
   {
     number = 1
