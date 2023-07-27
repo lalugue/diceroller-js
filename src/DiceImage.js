@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import imgdice0 from './assets/dice_0.svg'
 import imgdice1 from './assets/dice_1.svg'
 import imgdice2 from './assets/dice_2.svg'
@@ -24,6 +25,10 @@ class DiceImage extends Component {
         
       );
     }
+  }
+
+  DiceImage.propTypes = {
+    imgsrc: PropTypes.number,
   }
 
 export default DiceImage;
