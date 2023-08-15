@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import DiceText from "./DummyText";
+import DiceText from "./DiceText";
 import RollButton from "./RollButton";
 import DiceImage from "./DiceImage";
 

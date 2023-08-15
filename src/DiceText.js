@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class DummyText extends Component {
+class DiceText extends Component {
   constructor(props) {
     super(props);
   }
@@ -10,4 +10,4 @@ class DummyText extends Component {
   }
 }
 
-export default DummyText;
+export default DiceText;
