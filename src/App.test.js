@@ -4,7 +4,7 @@ import App from "./App";
 
 // @TODO: add more tests
 
-test("renders learn react link", () => {
+test("renders 'Roll Dice' button", () => {
   const { getByText } = render(<App />);
   const buttonElement = getByText(/Roll Dice/i);
   expect(buttonElement).toBeInTheDocument();
