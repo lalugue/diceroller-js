@@ -24,7 +24,7 @@ jobs:
     - name: Build and publish GitHub pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/lalugue/diceroller-js.git
-        npm run build
+        yarn run build
         npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
