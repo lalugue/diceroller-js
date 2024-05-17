@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "eslint": "npx eslint -c .eslintrc.js src/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,8 +36,12 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-react": "7.33.0",
+    "@eslint/compat": "^1.0.1",
+    "@eslint/js": "^9.2.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
     "gh-pages": "6.0.0",
+    "globals": "^15.2.0",
     "prettier": "3.0.1"
   }
 }
