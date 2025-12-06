@@ -8,7 +8,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "foo",
       title: "Roll the dice!",
       imgsrc: 0,
     };
