@@ -5,26 +5,26 @@ on:
     branches: [master]
 
 concurrency:
-  group:  ${{ github.ref }}-${{ github.event.pull_request.number || github.ref }}
+  group: ${{ github.ref }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   run-frontend:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 24
-    - run: yarn install --immutable
-    - name: Run ESLint
-      run: yarn run eslint
-    - name: Run tests
-      run: yarn run test
-    - name: Build and publish GitHub pages
-      run: |
-        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/lalugue/diceroller-js.git
-        yarn run build
-        npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 24
+      - run: yarn install --immutable
+      - name: Run ESLint
+        run: yarn run eslint
+      - name: Run tests
+        run: yarn run test
+      - name: Build and publish GitHub pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/lalugue/diceroller-js.git
+          yarn run build
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
