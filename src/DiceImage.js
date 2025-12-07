@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import imgdice0 from "./assets/dice_0.svg";
 import imgdice1 from "./assets/dice_1.svg";
@@ -8,7 +8,7 @@ import imgdice4 from "./assets/dice_4.svg";
 import imgdice5 from "./assets/dice_5.svg";
 import imgdice6 from "./assets/dice_6.svg";
 
-let images = [
+const images = [
   imgdice0,
   imgdice1,
   imgdice2,
@@ -18,21 +18,11 @@ let images = [
   imgdice6,
 ];
 
-//a text component for testing purposes
-class DiceImage extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <img src={images[this.props.imgsrc]} className="App-logo" alt="logo" />
-    );
-  }
+export default function DiceImage(props) {
+  const { imgsrc } = props;
+  return <img src={images[imgsrc]} className="App-logo" alt="logo" />;
 }
 
 DiceImage.propTypes = {
   imgsrc: PropTypes.number,
 };
-
-export default DiceImage;
