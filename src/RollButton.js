@@ -7,10 +7,6 @@ class RollButton extends Component {
     super(props);
   }
 
-  roll() {
-    alert("Great roll!");
-  }
-
   render() {
     return (
       <Button color="green" onClick={this.props.setDice}>
