@@ -5334,10 +5334,10 @@ globals@^13.19.0:
   dependencies:
     type-fest "^0.20.2"
 
-globals@^15.2.0:
-  version "15.2.0"
-  resolved "https://registry.npmjs.org/globals/-/globals-15.2.0.tgz"
-  integrity sha512-FQ5YwCHZM3nCmtb5FzEWwdUc9K5d3V/w9mzcz8iGD1gC/aOTHc6PouYu0kkKipNJqHAT7m51sqzQjEjIP+cK0A==
+globals@^16.5.0:
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-16.5.0.tgz#ccf1594a437b97653b2be13ed4d8f5c9f850cac1"
+  integrity sha512-c/c15i26VrJ4IRt5Z89DnIzCGDn9EcebibhAOjw5ibqEHsE1wLUgkPn9RDmNcUKyU87GeaL633nyJ+pplFR2ZQ==
 
 globalthis@^1.0.3:
   version "1.0.3"
