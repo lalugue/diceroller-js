@@ -4,7 +4,7 @@
   "homepage": "https://lalugue.github.io/diceroller-js/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/jest-dom": "6.9.1",
     "@testing-library/react": "12.1.5",
     "@testing-library/user-event": "14.6.1",
     "react": "16.14.0",
