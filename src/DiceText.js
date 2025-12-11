@@ -1,18 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-class DiceText extends Component {
-  constructor(props) {
-    super(props);
-  }
+export default function DiceText(props) {
+  const { title } = props;
 
-  render() {
-    return <p>{this.props.title}</p>;
-  }
+  return <p>{title}</p>;
 }
 
 DiceText.propTypes = {
   title: PropTypes.string,
 };
-
-export default DiceText;
