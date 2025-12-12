@@ -19,12 +19,12 @@ const images = [
 ];
 
 export default function DiceImage(props) {
-  const { imgsrc } = props;
+  const { diceValue } = props;
   return (
-    <img src={images[imgsrc]} className="App-logo" alt={`dice ${imgsrc}`} />
+    <img src={images[diceValue]} className="App-logo" alt={`dice ${diceValue}`} />
   );
 }
 
 DiceImage.propTypes = {
-  imgsrc: PropTypes.number,
+  diceValue: PropTypes.number,
 };

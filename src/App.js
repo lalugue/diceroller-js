@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
       title: "Roll the dice!",
-      imgsrc: 0,
+      diceValue: 0,
     };
   }
 
@@ -26,14 +26,14 @@ class App extends Component {
   };
 
   setDiceImage = (num) => {
-    this.setState({ imgsrc: num });
+    this.setState({ diceValue: num });
   };
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <DiceImage imgsrc={this.state.imgsrc} />
+          <DiceImage diceValue={this.state.diceValue} />
           <DiceText title={this.state.title} />
           <RollButton setDice={this.setDice.bind(this)} />
         </header>
