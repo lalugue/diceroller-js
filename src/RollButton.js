@@ -1,23 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Button } from "semantic-ui-react";
 
-class RollButton extends Component {
-  constructor(props) {
-    super(props);
-  }
+export default function RollButton(props) {
+  const { setDice } = props;
 
-  render() {
-    return (
-      <Button color="green" onClick={this.props.setDice}>
-        Roll Dice
-      </Button>
-    );
-  }
+  return (
+    <Button color="green" onClick={setDice}>
+      Roll Dice
+    </Button>
+  );
 }
 
 RollButton.propTypes = {
   setDice: PropTypes.function,
 };
-
-export default RollButton;
