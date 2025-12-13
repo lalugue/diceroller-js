@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/diceroller-js/static/css/main.6e365338.css",
-    "main.js": "/diceroller-js/static/js/main.8011473c.js",
+    "main.js": "/diceroller-js/static/js/main.42ef7409.js",
     "static/media/dice_1.svg": "/diceroller-js/static/media/dice_1.99c0cab059cef2f06e7673dbb5fb9233.svg",
     "static/media/dice_6.svg": "/diceroller-js/static/media/dice_6.9e21e9f513c7a03fac959ab2b87ca048.svg",
     "static/media/dice_5.svg": "/diceroller-js/static/media/dice_5.9403505d431e0be214ca7aa9f68a4bd3.svg",
@@ -11,10 +11,10 @@
     "static/media/dice_3.svg": "/diceroller-js/static/media/dice_3.4c1beb2b3c59cce73ef632401829ed85.svg",
     "index.html": "/diceroller-js/index.html",
     "main.6e365338.css.map": "/diceroller-js/static/css/main.6e365338.css.map",
-    "main.8011473c.js.map": "/diceroller-js/static/js/main.8011473c.js.map"
+    "main.42ef7409.js.map": "/diceroller-js/static/js/main.42ef7409.js.map"
   },
   "entrypoints": [
     "static/css/main.6e365338.css",
-    "static/js/main.8011473c.js"
+    "static/js/main.42ef7409.js"
   ]
 }
