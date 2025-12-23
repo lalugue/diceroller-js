@@ -18,10 +18,7 @@ const compat = new FlatCompat({
 
 module.exports = defineConfig([{
     languageOptions: {
-        globals: {
-            ...globals.browser,
-            ...globals.jest,
-        },
+        ...globals.node,
 
         ecmaVersion: "latest",
         sourceType: "module",
