@@ -13,5 +13,5 @@ export default function RollButton(props) {
 }
 
 RollButton.propTypes = {
-  setDice: PropTypes.function,
+  setDice: PropTypes.func,
 };
