@@ -1,52 +1,55 @@
-const {
-    defineConfig,
-} = require("eslint/config");
+const { defineConfig } = require("eslint/config");
 
 const globals = require("globals");
 const react = require("eslint-plugin-react");
 const js = require("@eslint/js");
 
-const {
-    FlatCompat,
-} = require("@eslint/eslintrc");
+const { FlatCompat } = require("@eslint/eslintrc");
 
 const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
+  baseDirectory: __dirname,
+  recommendedConfig: js.configs.recommended,
+  allConfig: js.configs.all,
 });
 
-module.exports = defineConfig([{
+module.exports = defineConfig([
+  {
     languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.jest,
         ...globals.node,
+      },
 
-        ecmaVersion: "latest",
-        sourceType: "module",
-        parserOptions: {},
+      ecmaVersion: "latest",
+      sourceType: "module",
+      parserOptions: {},
     },
 
     extends: compat.extends("eslint:recommended", "plugin:react/recommended"),
 
     plugins: {
-        react,
+      react,
     },
 
     rules: {},
 
     settings: {
-        react: {
-            version: "detect",
-        },
+      react: {
+        version: "detect",
+      },
     },
-}, {
+  },
+  {
     languageOptions: {
-        globals: {
-            ...globals.node,
-        },
+      globals: {
+        ...globals.node,
+      },
 
-        sourceType: "script",
-        parserOptions: {},
+      sourceType: "script",
+      parserOptions: {},
     },
 
     files: ["**/.eslintrc.{js,cjs}"],
-}]);
+  },
+]);

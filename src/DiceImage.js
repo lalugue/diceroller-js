@@ -21,7 +21,11 @@ const images = [
 export default function DiceImage(props) {
   const { diceValue } = props;
   return (
-    <img src={images[diceValue]} className="App-logo" alt={`dice ${diceValue}`} />
+    <img
+      src={images[diceValue]}
+      className="App-logo"
+      alt={`dice ${diceValue}`}
+    />
   );
 }
 
