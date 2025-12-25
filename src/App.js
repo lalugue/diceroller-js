@@ -1,19 +1,14 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import DiceText from "./DiceText";
 import RollButton from "./RollButton";
 import DiceImage from "./DiceImage";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: "Roll the dice!",
-      diceValue: 0,
-    };
-  }
+function App() {
+  const [title, setTitle] = useState("Roll the dice!");
+  const [diceValue, setDiceValue] = useState(0);
 
-  setDice = () => {
+  const setDice = () => {
     let number = Math.random() * 6;
     number = Math.ceil(number);
     //checker in case the value is 0
@@ -21,25 +16,19 @@ class App extends Component {
     if (number === 0) {
       number = 1;
     }
-    this.setState({ title: number });
-    this.setDiceImage(number);
+    setTitle(number);
+    setDiceValue(number);
   };
 
-  setDiceImage = (num) => {
-    this.setState({ diceValue: num });
-  };
-
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <DiceImage diceValue={this.state.diceValue} />
-          <DiceText title={this.state.title} />
-          <RollButton setDice={this.setDice.bind(this)} />
-        </header>
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <header className="App-header">
+        <DiceImage diceValue={diceValue} />
+        <DiceText title={title} />
+        <RollButton setDice={setDice} />
+      </header>
+    </div>
+  );
 }
 
 export default App;
